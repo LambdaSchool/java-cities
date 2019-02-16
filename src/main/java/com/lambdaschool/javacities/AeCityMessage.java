@@ -14,7 +14,10 @@ public class AeCityMessage implements Serializable
     private final int priority;
     private final boolean secret;
 
-    public AeCityMessage(@JsonProperty String text, @JsonProperty int priority, @JsonProperty boolean secret)
+    // @JsonProperty takes json property and maps it into a java object?
+    public AeCityMessage(@JsonProperty("text") String text,
+                         @JsonProperty("priority") int priority,
+                         @JsonProperty("secret") boolean secret)
     {
         this.text = text;
         this.priority = priority;
