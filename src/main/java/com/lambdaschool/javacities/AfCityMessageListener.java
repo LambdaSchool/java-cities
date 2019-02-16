@@ -15,13 +15,13 @@ public class AfCityMessageListener
         log.info("Received Secret Message: {}", scm.toString());
     }
 
-    @RabbitListener(queues = AaJavacitiesApplication.CITIES1)
+    @RabbitListener(queues = AaJavacitiesApplication.CITIES1_QUEUE)
     public void receiveCities1Message(AeCityMessage c1cm)
     {
         log.info("Received Cities 1 Message: {}", c1cm.toString());
     }
 
-    @RabbitListener(queues = AaJavacitiesApplication.CITIES2)
+    @RabbitListener(queues = AaJavacitiesApplication.CITIES2_QUEUE)
     public void receiveCities2Message(AeCityMessage c2cm)
     {
         log.info("Received Cities 2 Message: {}", c2cm.toString());
