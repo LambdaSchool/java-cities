@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 // makes getters and setters
 @Data
-public class AeCityMessage implements Serializable
+class AeCityMessage implements Serializable
 {
     private final String text;
     private final int priority;

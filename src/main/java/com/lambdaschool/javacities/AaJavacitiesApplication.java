@@ -16,7 +16,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class AaJavacitiesApplication
 {
-    public static final String EXCHANGE_NAME = "LambdaServer";
+    private static final String EXCHANGE_NAME = "LambdaServer";
     public static final String SECRET_QUEUE = "SecretQueue";
     public static final String CITIES1_QUEUE = "Cities_1_Queue";
     public static final String CITIES2_QUEUE = "Cities_2_Queue";

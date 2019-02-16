@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Data
 // @Entity : makes object ready for jpa storage
 @Entity
-public class AbCity
+class AbCity
 {
     private @Id @GeneratedValue Long id;
     private String name;

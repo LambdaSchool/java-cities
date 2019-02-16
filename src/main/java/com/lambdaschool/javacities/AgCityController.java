@@ -32,7 +32,7 @@ put all other messages in the cities2 queue
     {
         ArrayList<AbCity> cities = new ArrayList<>(cityrepos.findAll());
 
-        log.info("Sending Msg from ================= /cities/afford =====================");
+        log.info("\n\n Sending Msg from ================= /cities/afford =====================");
 
         for (AbCity c : cities)
         {
@@ -41,7 +41,7 @@ put all other messages in the cities2 queue
             final AeCityMessage message = new AeCityMessage(c.toString(), rand, randBool);
 
 
-            if (randBool == true)
+            if (randBool)
             {
                 rt.convertAndSend(AaJavacitiesApplication.SECRET_QUEUE, message);
             }
@@ -68,7 +68,7 @@ put all other messages in the cities2 queue
     {
         ArrayList<AbCity> citiesHomes = new ArrayList<>(cityrepos.findAll());
 
-        log.info("Sending Msg from ================= /cities/homes =====================");
+        log.info("\n\n Sending Msg from ================= /cities/homes =====================");
 
         for (AbCity c : citiesHomes)
         {
@@ -77,7 +77,7 @@ put all other messages in the cities2 queue
             final AeCityMessage message = new AeCityMessage(c.toString(), rand, randBool);
 
 
-            if (randBool == true)
+            if (randBool)
             {
                 rt.convertAndSend(AaJavacitiesApplication.SECRET_QUEUE, message);
             }
@@ -104,7 +104,7 @@ put nothing in the cities2 queue
     {
         ArrayList<AbCity> citiesNames = new ArrayList<>(cityrepos.findAll());
 
-        log.info("Sending Msg from ================= /cities/names =====================");
+        log.info("\n\n Sending Msg from ================= /cities/names =====================");
 
         for (AbCity c : citiesNames)
         {
@@ -113,7 +113,7 @@ put nothing in the cities2 queue
             final AeCityMessage message = new AeCityMessage(c.toString(), rand, randBool);
 
 
-            if (randBool == true)
+            if (randBool)
             {
                 rt.convertAndSend(AaJavacitiesApplication.SECRET_QUEUE, message);
             }
